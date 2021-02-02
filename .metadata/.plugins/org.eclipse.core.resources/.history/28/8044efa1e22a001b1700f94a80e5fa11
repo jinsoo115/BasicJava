@@ -1,0 +1,64 @@
+package c_statement;
+
+import java.util.Scanner;
+
+public class Baseball {
+
+	public static void main(String[] args) {
+		/* 숫자야구 만들기^^
+		 * 135
+		 * 
+		 * 123 : 1S 1B 1O
+		 */
+		Scanner s = new Scanner(System.in);
+		
+		int random1 = 0;
+		int random2 = 0;
+		int random3 = 0;
+		while(random1 == random2 || random1 == random3 || random2 == random3){
+		random1 = (int)(Math.random() * 9)+1;
+		random2 = (int)(Math.random() * 9)+1;
+		random3 = (int)(Math.random() * 9)+1;
+		}
+		System.out.println(random1 + " " + random2 + " " + random3);
+		
+		int input1 = 0;
+		int input2 = 0;
+		int input3 = 0;
+		int strike = 0;
+		int ball = 0;
+		int out = 0;
+		System.out.print("첫번쨰 숫자를 입력해주세요>");
+		input1 = Integer.parseInt(s.nextLine());
+		System.out.print("두번쨰 숫자를 입력해주세요>");
+		input2 = Integer.parseInt(s.nextLine());
+		System.out.print("세번쨰 숫자를 입력해주세요>");
+		input3 = Integer.parseInt(s.nextLine());
+		
+		if(input1==random1){
+			strike++;
+		}else if(input1==random2 || input1 == random3){
+			ball++;
+		}else{
+			out++;
+		}
+		if(input2==random2){
+			strike++;
+		}else if(input2==random1 || input2 == random3){
+			ball++;
+		}else{
+			out++;
+		}
+		if(input3==random3){
+			strike++;
+		}else if(input3==random1 || input3 == random1){
+			ball++;
+		}else{
+			out++;
+		}
+		
+		System.out.println(strike + "S " + ball + "B " + out + "O");
+		
+	}
+
+}

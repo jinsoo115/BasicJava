@@ -1,0 +1,7 @@
+INDEX VERSION 1.126
+D:\A_TeachingMaterial\1.BasicJava\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3597994712.index
+\Basicjava\src
+D:\A_TeachingMaterial\1.BasicJava\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3296116828.index
+\Basicjava\src
+D:\A_TeachingMaterial\1.BasicJava\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\646802161.index
+\Basicjava\src
